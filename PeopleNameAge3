@@ -3,9 +3,6 @@ public class PeopleNameAge3 {
 	public static void main(String[] args) {
 		
 		int member; 
-		int age [];
-		String name [];
-			
 		Scanner sc = new Scanner (System.in);
 
 		System.out.println("--------------------------------------");		
@@ -14,28 +11,24 @@ public class PeopleNameAge3 {
 		
 		System.out.print("원하는 사람의 수를 입력하세요.");
 		member = sc.nextInt();
-		name = new String [member];	
-		age = new int [member];
+		String name[] = new String [member];	
+		int age[] = new int [member];
 		
 		System.out.println("[입력하신 인원수:"+member+"명]");
 		
-		for(int m=1; m<member ; m++ ){
+		for(int m=1; m<=member ; m++ ){
 		System.out.print(m+"번째 사람의 이름을 입력하세요.");
-		name [member] = sc.nextLine();
+		name[m-1] = sc.next();
+		//-1을 해주는것은 배열의 주소가 0부터 시작하기때문
 		
 		System.out.print(m+"번째 사람의 나이를 입력하세요.");
-		age [member]= sc.nextInt();
+		age[m-1]= sc.nextInt();
+		}
 		
-		for(m=1; m<member; m++){
-		System.out.println(name[member]+"의 나이는"+age[member]+"입니다.");
+		for(int m=1; m<=member; m++){
+		System.out.println(name[m-1]+"의 나이는"+age[m-1]+"입니다.");
 		}
 		System.out.println("프로그램이 종료됐습니다.");
-	}
-		
-	
-		
-		
-		
 	}
 
 }
