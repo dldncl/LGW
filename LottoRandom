@@ -20,7 +20,7 @@ public class LottoRandom {
 			}
 			System.out.print(su[a]+" ");
 		}
-		System.out.print("]");
-		System.out.println("\n============================");
+		System.out.println("]");
+		System.out.println("============================");
 	}
 }
