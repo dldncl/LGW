@@ -6,7 +6,7 @@ public class LottoRandom {
 
 		int []  su= new int [6];
 		Random r =new Random();
-		System.out.println("====로또 프로그램====");
+		System.out.println("=========로또 프로그램==========");
 		System.out.print("오눌의 번호:[ ");
 		for(int a=0;a<su.length;a++){
 			// 0부터 44까지 나옴 그래서 +1 해줘야함
@@ -21,5 +21,6 @@ public class LottoRandom {
 			System.out.print(su[a]+" ");
 		}
 		System.out.print("]");
+		System.out.println("\n============================");
 	}
 }
